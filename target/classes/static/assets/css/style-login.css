@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D3B66;
+    background-image: url(/images/cat-pana.svg), url(/images/dog-pana.svg);
+    background-repeat: no-repeat;
+    background-size: 75% 75%, 75% 75%;
+    background-position: left , right;
+    background-position-x: -200px, 700px;
+    transition: all ease .3s;
+}
+
+@media(max-width: 720px){
+    body {
+        background-image: none;
+    }
+}
+
+.login {
+    background-color: white;
+    width: 360px;
+    padding: 20px;
+    height: min-content;
+    border-radius: 16px;
+    box-shadow: 1px 1px 3px #0000002f;
+}
+
+.subtitle {
+    font-size: 14px;
+}
